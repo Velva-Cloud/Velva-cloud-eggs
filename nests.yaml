@@ -1,0 +1,10 @@
+# Nests definition for categorizing eggs
+
+nests:
+  - id: 1
+    name: "Game Servers"
+    description: "Eggs for popular dedicated game servers."
+
+  - id: 2
+    name: "Databases"
+    description: "Eggs for common database servers."
