@@ -11,6 +11,21 @@ This repository contains **Git-driven egg definitions** for deploying popular se
 - **eggs/**  
   Directory containing all egg definitions. Each egg is a YAML file describing a deployable server (e.g. Minecraft, databases), organized in folders by software type or family.
 
+### Directory structure
+
+```
+velva-eggs-repo/
+├── README.md
+├── nests.yaml
+└── eggs/
+    ├── minecraft/
+    │   └── java.yaml
+    ├── rust/
+    │   └── vanilla.yaml
+    └── <category>/
+        └── <your-egg>.yaml
+```
+
   ```
   eggs/
     minecraft/
