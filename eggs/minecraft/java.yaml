@@ -6,19 +6,12 @@ name: "Minecraft Java – Paper"
 description: "High-performance PaperMC server for Minecraft Java Edition"
 dockerImage: "itzg/minecraft-server:latest"
 startupCmd: ""  # Startup handled by image entrypoint; see https://hub.docker.com/r/itzg/minecraft-server
+
+# Environment variables expected by the image.
+# Only the default value is set here; see image docs for details.
 envSchema:
-  EULA:
-    default: "TRUE"
-    description: "You must accept Mojang's EULA to run the server."
-  MEMORY:
-    default: "2048"
-    description: "RAM to allocate to the server in MiB."
-  VERSION:
-    default: "latest"
-    description: "Minecraft server version (e.g. '1.20.4', 'latest')."
-  TYPE:
-    default: "PAPER"
-    description: "Server type (PAPER, VANILLA, etc.; handled by the image)."
-  ENABLE_RCON:
-    default: "false"
-    description: "Enable RCON remote console (true/false)."
+  EULA: "TRUE"         # You must accept Mojang's EULA to run the server.
+  MEMORY: "2048"       # RAM to allocate in MiB.
+  VERSION: "latest"    # Minecraft server version (e.g. '1.20.4', 'latest').
+  TYPE: "PAPER"        # Server type (PAPER, VANILLA, etc.)
+  ENABLE_RCON: "false" # Enable RCON remote console (true/false).
