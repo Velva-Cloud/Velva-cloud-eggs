@@ -1,0 +1,17 @@
+# Minecraft Java – Paper Egg Definition
+
+id: 10
+nestId: 1  # "Game Servers"
+name: "Minecraft Java – Paper"
+description: "High-performance PaperMC server for Minecraft Java Edition"
+dockerImage: "itzg/minecraft-server:latest"
+startupCmd: ""  # Startup handled by image entrypoint; see https://hub.docker.com/r/itzg/minecraft-server
+
+# Environment variables expected by the image.
+# Only the default value is set here; see image docs for details.
+envSchema:
+  EULA: "TRUE"         # You must accept Mojang's EULA to run the server.
+  MEMORY: "2048"       # RAM to allocate in MiB.
+  VERSION: "latest"    # Minecraft server version (e.g. '1.20.4', 'latest').
+  TYPE: "PAPER"        # Server type (PAPER, VANILLA, etc.)
+  ENABLE_RCON: "false" # Enable RCON remote console (true/false).
