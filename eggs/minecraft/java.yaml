@@ -4,8 +4,8 @@ id: 10
 nestId: 1  # "Game Servers"
 name: "Minecraft Java – Paper"
 description: "High-performance PaperMC server for Minecraft Java Edition"
-dockerImage: "itzg/minecraft-server:latest"
-startupCmd: ""  # Startup handled by image entrypoint; see https://hub.docker.com/r/itzg/minecraft-server
+image: "itzg/minecraft-server:latest"
+startup: "/start"
 
 # Environment variables expected by the image.
 # Only the default value is set here; see image docs for details.
